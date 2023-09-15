@@ -9,7 +9,7 @@ export default {
 </script>
 
 <template>
-    <h2 class="text-center my-5">Projects</h2>
+    <h1 class="text-center my-5">Projects</h1>
     <div class="row gy-3" v-if="projects.length">
         <ProjectCard v-for="project in projects" :key="project.id" :project="project" />
     </div>
