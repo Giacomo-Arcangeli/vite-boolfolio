@@ -55,7 +55,8 @@ export default {
             <h5 v-else class="card-title text-center">{{ project.title }}</h5>
             <div class="row align-items-center">
                 <div class="col-3">
-                    <img class="img-fluid my-4" src="https://marcolanci.it/utils/placeholder.jpg" alt="">
+                    <img class="img-fluid my-4"
+                        :src="project.cover ? project.cover : 'https://marcolanci.it/utils/placeholder.jpg'" alt="">
                 </div>
                 <div class="col-9">
                     <p class="card-text">{{ isDetail ? project.description : abstract }}</p>
